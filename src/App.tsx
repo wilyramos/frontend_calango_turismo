@@ -6,6 +6,9 @@ import Login from "./pages/Login"
 import { Routes, Route } from "react-router-dom"
 import { BrowserRouter as Router } from "react-router-dom"
 import Recomendations from "./pages/Recomendations"
+import Registrar from "./pages/Registrar"
+import OlvidePassword from "./pages/OlvidePassword"
+
 
 
 export default function App() {
@@ -18,8 +21,8 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="*" element={<div>Not Found</div>} />
           <Route path="/login" element={<Login />} />
-          <Route path="/registrar" element={<div>Register</div>} />
-          <Route path="/olvide-password" element={<div>Olivde passowrd</div>} />
+          <Route path="/registrar" element={ <Registrar />} />
+          <Route path="/olvide-password" element= { < OlvidePassword /> } />
           <Route path="/confirmar/:id" element={<div>Confirm</div>} />
 
 
